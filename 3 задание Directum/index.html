@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Directum event</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="menu">
+      <ul class="menuList">
+        <li><a href="#">О мероприятии</a></li>
+        <li><a href="#">Регистрация</a></li>
+        <li><a href="#">Стоимость обучения</a></li>
+        <li><a href="#">Спикеры</a></li>
+      </ul>
+    </div>
+    <div class="logo">
+      <img class="logoImg" src="./src/лого.svg" alt='Directum' />
+      <h1>Название мероприятия</h1>
+      <h2>4 мая 2049</h2>
+      <h3>в самом сердце страны</h3>
+      <button class="reg">Регистрация</button>
+    </div>
+  </div>
+  <main>
+    <div class="popup">
+      <div class="popupContainer">
+        <div class="popupWrapper">
+          <div id="regCard">
+            <form action="#" autocomplete="off">
+              <p class="textRegForm">Регистрация</p>
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+              <input type="text" name="nameReq" placeholder="ФИО" class="inputName">
+              <input type="text" name="lastNameReq" placeholder="Email" class="inputEmal">
+              <button type="submit" class="btn">Регистрация</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="infoBlock">
+      <div class="greetings">
+        <p>Дорогие друзья!</p>
+        <p>
+          <br></be><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <p><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+      </div>
+      <div class="regInfo">
+        <p class="textHead" id="mediumReg">Регистрация</p>
+        <p><br>Пожалуйста, проверьте правильность введёных данных:</p>
+        <div class="dataUser">
+          <div class="persData">
+            <div>ФИО:</div>
+            <div>Иванов Иван Иванович</div>
+            <div>Место работы:</div>
+            <div>DIRECTUM</div>
+            <div class="">E-mail:</div>
+            <div>ivanov_ii@direcrum.ru</div>
+          </div>
+          <!-- <div class="enterData">
+            <div>Иванов Иван Иванович</div>
+            <div>DIRECTUM</div>
+            <div>ivanov_ii@direcrum.ru</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="price">
+      <div class="priceList">
+        <div class="headPriceList">
+          <p class="textHead">Стоимоть участия</p>
+          <p class="dopText">(на 1 человека)</p>
+        </div>
+        <table>
+          <tr class="firstLine">
+            <th></th>
+            <th>Стоимость ДО 1 января</th>
+            <th>Стоимость ПОСЛЕ 1 января</th>
+          </tr>
+          <tr>
+            <td>С проживанием в 2-местном номере</td>
+            <td>30 000 ₽</td>
+            <td>35 000 ₽</td>
+          </tr>
+          <tr>
+            <td>Доплата за 1-местное проживание</td>
+            <td>500 ₽</td>
+            <td>1 500 ₽</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="slidesshow-container">
+      <div class="gallery"><p class="textHead">Галерея</p></div>
+      <div class="wrapperGallery">
+      </div>
+      <div class="mySlides fade">
+        <img src="./src/slide1.png" style="width: 100%" alt="#">
+      </div>
+      <div class="mySlides fade">
+        <img src="./src/slide2.png" style="width: 100%" alt="#">
+      </div>
+      <div class="mySlides fade">
+        <img src="./src/slide3.png" style="width: 100%" alt="#">
+      </div>
+        <div class='dotBox'>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div class="speakers">
+      <p class="textHead">Наши спикеры</p>
+      <div class="speakersCards">
+        <div class="card">
+          <img class="pikaPika" rel="stylesheet" src="./src/image.svg" alt="Что это за покемон?">
+          <p class='viewPokemon'>Детектив пикачу</p>
+          <p class="descriptionPokemon"><br>уморительный, остроумный и обаятельный сыщик</p>
+        </div>
+        <div class="card">
+          <img class="pikaPika" rel="stylesheet" src="./src/image.svg" alt="Что это за покемон?">
+          <p class='viewPokemon'>Детектив пикачу</p>
+          <p class="descriptionPokemon"><br>уморительный, остроумный и обаятельный сыщик</p>
+        </div>
+        <div class="card">
+          <img class="pikaPika" rel="stylesheet" src="./src/image.svg" alt="Что это за покемон?">
+          <p class='viewPokemon'>Детектив пикачу</p>
+          <p class="descriptionPokemon"><br>уморительный, остроумный и обаятельный сыщик</p>
+        </div>
+        <div class="card">
+          <img class="pikaPika" rel="stylesheet" src="./src/image.svg" alt="Что это за покемон?">
+          <p class='viewPokemon'>Детектив пикачу</p>
+          <p class="descriptionPokemon"><br>уморительный, остроумный и обаятельный сыщик</p>
+        </div>
+        <div class="card">
+          <img class="pikaPika" rel="stylesheet" src="./src/image.svg" alt="Что это за покемон?">
+          <p class='viewPokemon'>Детектив пикачу</p>
+          <p class="descriptionPokemon"><br>уморительный, остроумный и обаятельный сыщик</p>
+        </div>
+        <div class="card">
+          <img class="pikaPika" rel="stylesheet" src="./src/image.svg" alt="Что это за покемон?">
+          <p class='viewPokemon'>Детектив пикачу</p>
+          <p class="descriptionPokemon"><br>уморительный, остроумный и обаятельный сыщик</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapperFooter">
+      <img class="logoFooter" src="./src/footer.svg" alt="Directum">
+      <div class="footerText">© DIRECTUM, 2019</div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

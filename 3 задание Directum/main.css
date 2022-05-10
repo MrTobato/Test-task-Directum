@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.94px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+.header {
+    background-color: #17A2B8;
+    width: 100vw;
+    height: 793px;
+    color: #FFFFFF;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*Обёртка блока меню хедера */
+.menu {
+    margin: auto;
+    max-width: 1140px;
+    max-height: 50px;
+}
+/* Контейнер меню хедер*/
+.menuList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 32px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+/* Контейнер лого */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg {
+    margin: 120px auto 48px;
+}
+
+h1 {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47.88px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+
+h2, h3 { 
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37.92px;
+}
+/* Кнопка регистрации в хедере */
+.reg {
+    margin-top: 48px;
+    width: 208px;
+    height: 56px;
+
+    padding: 0;
+    border: 1px solid #2b3e8a;
+    background-color: #2b3e8a;
+    border-radius: 4px;
+    outline: none;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: #FFFFFF;
+}
+
+.reg:hover {
+    cursor: pointer;
+    background-color: #3950ad;
+}
+/* Обёртка блока с приветствием и данными пользователя*/
+.infoBlock {
+    max-width: 60vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 48px 0 48px 0;
+}
+/* Приветствие */
+.greetings {
+    text-align: center;
+    width: 40%;
+    height: 100%;
+}
+
+.regInfo {
+    align-self: flex-start;
+    width: 50%;
+}
+
+p, b {
+    color: #000000;
+}
+
+b {
+    font-weight: 600;
+}
+/* для заглавных надписей. Центрированные в отличии от h1 */
+.textHead {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42.56px;
+}
+
+/* Блок введёнх данных пользователя */
+.dataUser {
+
+    padding-top: 10px;
+}
+
+.persData {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.persData div {
+    width: 50%;
+}
+/* Блок с данными пользователя */
+/* .enterData {
+    padding-left: 40px;
+} */
+/* Блок с таблицей стоимости участия */
+.price {
+    margin: auto;
+    max-width: 90vw;
+    height: 100%;
+    padding-bottom: 48px;
+}
+/* Блок с текстом: Стоимость участия */
+.headPriceList {
+    margin-bottom: 32px;
+}
+/* Для тега <р> с текстом (на 1 человека) */
+.dopText {
+    text-align: center;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    height: 150px;
+    border-collapse: collapse;
+    border: 2px solid white;
+    border-top: 1px solid #DEE2E6;
+}
+/* первыя строка таблицы */
+.firstLine {
+    border-bottom: 2px solid #DEE2E6;
+}
+/* Строка */
+tr {
+    border: 1px solid #DEE2E6;
+}
+/* Ячейка */
+th { 
+    text-align: left;
+}
+
+/* Блок со сладером */
+.slidesshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+/* Блок с текстом Галлерея */
+.gallery {
+    margin-bottom: 35px;
+}
+/* Блок с картинками галлереи */
+.mySlides {
+    display: none;
+}
+/* Блок с кнопками переключения */
+.dotBox { 
+    display: flex;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 5%;
+}
+/* Кнопка переключения */
+.dot {
+    height: 3px;
+    width: 30px;
+    margin: 0 8px;
+    cursor: pointer;
+    background-color: #E6B37A;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+}
+/* для активной кнопки */
+.active, .dot:hover {
+    background-color: #FF8A00;
+}
+/* Блок спикеров */
+.speakers {
+    width: 100%;
+}
+/* Блок-обёртка с карточка спикера */
+.speakersCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 964px;
+    margin: auto;
+    margin-top: 35px;
+
+}
+/* Карточка спикера */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 217px;
+    height: 205px;
+    margin: 0px 20px 24px 0px;
+}
+/* Аватар спикера */
+.pikaPika {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+/* Имя спикера */
+.viewPokemon {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26.6px;
+    text-align: center;
+}
+/* Описание спикера  */
+.descriptionPokemon {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 21.28px;
+}
+
+footer {
+    flex-shrink: 0;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Логотип в подвале */
+.logoFooter {
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.footerText {
+    font-size: 12px;
+    line-height: 15.96px;
+    text-align: center;
+    color: #BABABA;
+}
+
+/* Форма регистрации */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+/* добавачный класс после нажатия кнопки к .popup */
+.popup_open {
+  display: block;
+}
+/* Обёртка формы регистрации */
+.popupContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  max-width: 404px;
+  width: 100%;
+}
+/* обёртка формы регистрации */
+.popupWrapper {
+  padding: 30px;
+}
+/* Блок-контейнер с формой регистрации */
+#regCard {
+    display: none;
+}
+/* Добавочный класс, после нажатия кнопки отображает форму регистрации */
+#regCard.open {
+    display: block;
+}
+  
+/* Форма регистрации */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+}
+/* Кнопка в форме регистрации - "Регистрация" */
+.btn {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+    width: 127px;
+    height: 38px;
+
+    padding: 0;
+    border: 1px solid #2b3e8a;
+    background-color: #2b3e8a;
+    border-radius: 4px;
+    outline: none;
+
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: #FFFFFF;
+
+}
+/* Текст Регистрация в форме */
+.textRegForm {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 27,42px;
+    color: #9FA3AB;
+    margin-bottom: 24px;
+}
+/* Кнопка для закрытия формы (крестик) */
+.closebtn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    color: #BEC7CB;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* Поля для ввода данных в форме */
+input {
+    margin-bottom: 16px;
+    height: 28px;
+    width: 100%;
+    padding-left: 8px;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 16.41px;
+    font-size: 14px;
+
+    color: #B5BFC3;
+
+}
+
+
+@media (max-width: 768px) {
+    .infoBlock {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .greetings {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        padding-left: 5%; 
+        text-align: left;
+    }
+    .regInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+    }
+    #mediumReg {
+       padding-top: 48px;
+       margin: auto;
+    }
+
+}
+
+@media (max-width: 767px) {   
+    .menuList {
+        display: block;
+        padding-left: 5%;
+    }
+    
+    .persData div{
+        width: auto;
+        padding-right: 15px;
+    }
+
+    .greetings {
+        padding-right: 5%;
+    }
+
+}
